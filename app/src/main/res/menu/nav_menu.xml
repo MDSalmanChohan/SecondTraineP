@@ -1,0 +1,56 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile" />
+
+        <item
+            android:id="@+id/nav_support"
+            android:icon="@drawable/ic_support"
+            android:title="TextBook"/>
+
+
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/baseline_contact_support_24"
+                android:title="Calculator"
+            />
+
+<!--        <item-->
+<!--            android:id="@+id/nav_wishlist"-->
+<!--            android:icon="@drawable/wish"-->
+<!--            android:title="MyWishlist"/>-->
+
+
+        <item
+            android:id="@+id/nav_TearmsAndCondition"
+            android:icon="@drawable/ic_tearm"
+            android:title="EmergencyConnect"/>
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_about"
+            android:title="PersonDetails"/>
+
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_share"
+            android:title="Share"/>
+
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="StoreVisit" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout" />
+    </group>
+</menu>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@color/orange"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/nav_profiless"
+        android:layout_width="56dp"
+        android:layout_height="63dp"
+        android:src="@drawable/salman" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nav_name"
+        android:text="MD Salman"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nav_email"
+        android:text="salmankhan1862002@gmail.com"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="4dp" />
+
+</LinearLayout>

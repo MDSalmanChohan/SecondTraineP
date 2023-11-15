@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:paddingEnd="10dp"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.4">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_cart_24"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.6"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/orderId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order Id : "></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6786e8qhjhjggh"
+                    android:textColor="#4CAF50"
+                    android:singleLine="true"
+                    android:layout_toRightOf="@+id/orderId"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/created"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Created at : "></TextView>
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="03 May, 2023 11:20am"
+                    android:singleLine="true"
+                    android:layout_toRightOf="@+id/created"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_toRightOf="@+id/date">
+
+                    <ImageView
+                        android:layout_toRightOf="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_forward"
+                        android:layout_height="wrap_content"></ImageView>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="₹ 300.00"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="8dp"
+                android:background="#CCC4C4"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp">
+                <ImageView
+                    android:id="@+id/watch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_watch"
+                    ></ImageView>
+                <TextView
+                    android:id="@+id/pending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PENDING"
+                    android:textColor="#EA1313"
+                    android:singleLine="true"
+                    android:layout_toRightOf="@+id/watch"/>
+
+                <TextView
+                    android:id="@+id/cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CANCEL"
+                    android:singleLine="true"
+                    android:visibility="gone"
+                    android:layout_toRightOf="@+id/watch"/>
+
+                <TextView
+                    android:id="@+id/success"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SUCCESS"
+                    android:singleLine="true"
+                    android:visibility="gone"
+                    android:layout_toRightOf="@+id/watch"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_toRightOf="@+id/pending">
+
+                    <TextView
+                        android:layout_toRightOf="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:text="# OFFLINE"
+                        android:textColor="#EA1313"
+                        android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
